@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { auth, googleAuth } from "../Resources/firebase";
 import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { signOut } from "firebase/auth";
 
 function SignInOut() {
   const [email, setEmail] = useState("");
@@ -14,6 +15,11 @@ function SignInOut() {
   const googleSignIn = async () => {
     await signInWithPopup(auth, googleAuth);
     alert("Anguka Nayo");
+  };
+
+  const logOut = async () => {
+    await signOut(auth);
+    alert("Logout");
   };
   return (
     <div className="signin-container">
@@ -42,7 +48,9 @@ function SignInOut() {
         <button className="google" onClick={googleSignIn}>
           Sign In with google
         </button>
-        <button className="Logout">Log-Out</button>
+        <button className="Logout" onClick={logOut}>
+          Log-Out
+        </button>
       </div>
     </div>
   );

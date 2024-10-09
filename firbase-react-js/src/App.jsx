@@ -1,8 +1,10 @@
-import SignInOut from "./Authentication/SignInOut";
+import AddProducts from "./Authentication/Pages/AddProducts";
+
+//import SignInOut from "./Authentication/SignInOut";
 function App() {
   return (
     <>
-      <SignInOut />
+      <AddProducts />
     </>
   );
 }

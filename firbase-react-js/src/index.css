@@ -83,3 +83,84 @@ button {
   border: none;
   outline: none;
 }
+
+/* ADD PRODUCTS PAGE*/
+
+.addProducts-container {
+  padding: 10px;
+  background: linear-gradient(100deg, purple, red);
+  height: 100vh;
+  width: 100%;
+}
+
+.addProductInput {
+  max-width: 700px;
+  max-height: 700px;
+  padding: 10px;
+  margin: 100px 0 0 100px;
+  background: white;
+  border-radius: 20px;
+  justify-content: space-evenly;
+}
+.addProductInput h1 {
+  margin: 20px;
+}
+
+.productName label {
+  margin: 20px;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.productName input {
+  margin: 10px;
+  padding: 5px;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.productDescription label {
+  margin: 20px;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.productDescription input {
+  margin: 10px;
+  padding: 5px;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.productPrice label {
+  margin: 20px;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.productPrice input {
+  margin: 10px;
+  padding: 5px;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.addProd-btn {
+  color: white;
+  background: blueviolet;
+  border-radius: 20px;
+  width: 100px;
+  height: 50px;
+  margin: 20px;
+}
+
+.addProd-btn:active {
+  transform: scale(0.8);
+  background: hsl(271, 61%, 69%);
+}
