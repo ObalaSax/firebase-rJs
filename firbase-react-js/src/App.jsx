@@ -1,12 +1,5 @@
-import AddProducts from "./Authentication/Pages/AddProducts";
-
-//import SignInOut from "./Authentication/SignInOut";
 function App() {
-  return (
-    <>
-      <AddProducts />
-    </>
-  );
+  return <div></div>;
 }
 
 export default App;
